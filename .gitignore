@@ -1,0 +1,25 @@
+# Окружения (Conda и venv)
+.conda/
+.env/
+env/
+venv/
+ENV/
+
+# Python (Кэш и байт-код)
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# Конфиденциальные данные
+.env
+*.log
+
+# IDE (VS Code, PyCharm)
+.vscode/
+.idea/
+
+# Специфичное для FastAPI / БД
+faiss_index
+

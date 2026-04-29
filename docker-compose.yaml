@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  bot-api:
+    build: .
+    container_name: tg_bot_fastapi
+    restart: always
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      # Переопределяем URL для связи с Ollama внутри Docker-сети
+      - OLLAMA_URL=http://ollama:11434
